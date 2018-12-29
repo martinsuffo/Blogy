@@ -1,4 +1,4 @@
-package src.java.main.org.msuffo.Blogy.controllers;
+package org.msuffo.Blogy.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -22,25 +22,25 @@ import org.msuffo.Blogy.services.ServicesPost;
 
 @RestController
 public class GreeterController {
-	
+
 	@Autowired
 	private PostDAO postDAO;
-	
+
 	@Autowired
 	private ServicesPost sPost;
-	
+
 	@GetMapping("/posts")
 	public ResponseEntity<Post> getPosts() {
 		Post post = new Post(0, "Post hard", "Contenido del post", new Date(-3), "admin");
 		return new ResponseEntity<Post>(post, HttpStatus.OK);
 	}
-	
+
 	@GetMapping("/post")
 	public ResponseEntity<Post> getPostById(@RequestParam("id") int id) {
 		Post post = postDAO.get(id);
-	return new ResponseEntity<Post>(post, HttpStatus.OK);	
+	return new ResponseEntity<Post>(post, HttpStatus.OK);
 	}
-	
+
 	@PostMapping("/newpost")
 	public ResponseEntity<String> RegPost(@RequestBody Post post){
 		try {
