@@ -1,5 +1,7 @@
-/home/msuffo/workspace/Blogy/src/main/java/org/msuffo/Blogy/PostApplication.java
-/home/msuffo/workspace/Blogy/src/main/java/org/msuffo/Blogy/controllers/GreeterController.java
-/home/msuffo/workspace/Blogy/src/main/java/org/msuffo/Blogy/dao/PostDAO.java
-/home/msuffo/workspace/Blogy/src/main/java/org/msuffo/Blogy/dao/PostDAOImpl.java
-/home/msuffo/workspace/Blogy/src/main/java/org/msuffo/Blogy/models/Post.java
+/home/fpalacios/workspace/Blogy/src/main/java/org/msuffo/Blogy/dao/PostDAO.java
+/home/fpalacios/workspace/Blogy/src/main/java/org/msuffo/Blogy/PostApplication.java
+/home/fpalacios/workspace/Blogy/src/main/java/org/msuffo/Blogy/exceptions/NoPermissionException.java
+/home/fpalacios/workspace/Blogy/src/main/java/org/msuffo/Blogy/dao/PostDAOImpl.java
+/home/fpalacios/workspace/Blogy/src/main/java/org/msuffo/Blogy/models/Post.java
+/home/fpalacios/workspace/Blogy/src/main/java/org/msuffo/Blogy/services/ServicesPost.java
+/home/fpalacios/workspace/Blogy/src/main/java/org/msuffo/Blogy/controllers/GreeterController.java

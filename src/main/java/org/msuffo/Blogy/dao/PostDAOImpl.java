@@ -1,4 +1,4 @@
-package src.java.main.org.msuffo.Blogy.dao;
+package org.msuffo.Blogy.dao;
 
 import java.sql.ResultSet;
 import java.sql.SQLDataException;
@@ -17,10 +17,10 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class PostDAOImpl implements PostDAO {
-	
+
 	@Autowired
 	private JdbcTemplate jdbcTemplate;
-	
+
 	@Override
 	public void saveOrUpdate(Post post) {
 	    if (post.getId() > 0) {
@@ -35,7 +35,7 @@ public class PostDAOImpl implements PostDAO {
 	                post.getAuthor(), post.getDate());
 	    }
 	}
-	
+
 	@Override
 	public void delete(int postId) {
 	    String sql = "DELETE FROM post WHERE _id=?";
@@ -52,9 +52,9 @@ public class PostDAOImpl implements PostDAO {
 
 	            return aPost;
 	        }
-	 
+
 	    });
-	 
+
 	    return listPost;
 	}
 
@@ -70,5 +70,5 @@ public class PostDAOImpl implements PostDAO {
 	    return null;
 	    });
 	}
-	
+
 }

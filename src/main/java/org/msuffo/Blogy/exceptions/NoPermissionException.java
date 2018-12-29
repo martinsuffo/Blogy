@@ -1,4 +1,4 @@
-package src.java.main.org.msuffo.Blogy.exceptions;
+package org.msuffo.Blogy.exceptions;
 
 public class NoPermissionException extends Exception{
 
